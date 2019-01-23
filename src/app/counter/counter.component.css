@@ -1,0 +1,19 @@
+.kirby-jump {
+  padding-top: 150px;
+}
+
+.jumpKirby {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.05,1,.5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% { 
+    transform: translate3d(0, 0, 0);
+  }
+  to { 
+    transform: translate3d(0, -120px, 0);
+  }
+}

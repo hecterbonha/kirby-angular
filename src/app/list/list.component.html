@@ -1,0 +1,15 @@
+<section class="nes-container with-title is-centered">
+  <h2 class="title">Kirby loves to eat</h2>
+  <div class="lists">
+      <ng-template [ngIf]="render">
+        <ul class="nes-list is-disc">
+          <li *ngFor="let data of datas">
+            {{ data.food }}
+          </li>
+        </ul>
+      </ng-template>
+      <ng-template [ngIf]="!render">
+        <button class="nes-btn is-primary" (click)="feedKirby()">Feed</button>
+      </ng-template>
+  </div>
+</section>

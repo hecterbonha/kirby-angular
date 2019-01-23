@@ -1,0 +1,23 @@
+<section class="ballon nes-container is-centered">
+  <div class="hello">
+    <h1>{{ messageText }}</h1>
+    <p>
+      Count Me
+    </p>
+    <p>{{ number }}</p>
+    <div class="kirby-jump">
+      <i 
+        class="nes-kirby"
+        [ngClass]="{ jumpKirby: isJumping }">
+      </i>
+    </div>
+    <br>
+    <button 
+      class="nes-btn"
+      [ngClass]="{ 'is-disabled': isDisabled }"
+      (click)="kirbyJump()"
+    >
+      Jump
+    </button>
+  </div>
+</section>
